@@ -16,5 +16,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^5.5.0"
   }
 }
