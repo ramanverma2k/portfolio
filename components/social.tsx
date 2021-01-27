@@ -5,7 +5,7 @@ import Mail from '../components/icons/mail.svg'
 
 export default function SocialLinks() {
     return (
-        <div className="text-secondary flex flex-wrap justify-center space-x-4">
+        <div className="flex flex-wrap justify-center space-x-4 pt-2">
                 <a className="pt-1" href="https://www.github.com/ramanverma2k">
                     <Github class="fill-current text-ob2"/>
                 </a>
