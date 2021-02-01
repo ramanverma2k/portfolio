@@ -2,6 +2,7 @@ import Github from '../components/icons/github.svg'
 import LinkedIn from '../components/icons/linkedin.svg'
 import Telegram from '../components/icons/telegram.svg'
 import Mail from '../components/icons/mail.svg'
+import { motion } from 'framer-motion'
 
 export default function SocialLinks() {
     return (
