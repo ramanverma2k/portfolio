@@ -1,0 +1,5 @@
+.div_bgrnd {
+    display: inline-block;
+    background-color: var(--catawba);
+    width: '50%'
+}
