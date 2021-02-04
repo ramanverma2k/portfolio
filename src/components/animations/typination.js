@@ -1,6 +1,6 @@
 import React from 'react'
 import Typed from 'typed.js'
-import './styles/div_bgrnd.css'
+import '../styles/div_bgrnd.css'
 
 const typination = [
     'Freelancer',

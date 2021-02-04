@@ -1,4 +1,4 @@
-import Typination from './typination'
+import Typination from './animations/typination'
 
 const heroStyle = {
     display: 'flex',
