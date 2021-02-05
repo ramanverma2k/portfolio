@@ -1,7 +1,7 @@
 const socialStyle = {
     display: 'flex',
     justifyContent: 'flex-start',
-    // flexWrap: 'wrap',
+    paddingTop: '1rem'
 }
 
 const Social = () => (
