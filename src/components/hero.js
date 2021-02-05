@@ -1,5 +1,6 @@
 import Typination from './animations/typination'
 import Carousel from './animations/carousel'
+import Social from './social'
 
 const heroLayout = {
     display: 'flex',
@@ -23,6 +24,7 @@ const Hero = () => (
                         I&apos;m Raman Verma, A<br/>
                         <Typination/>
                     </p>
+                    <Social/>
                 </span>
             </h1>
         </div>
