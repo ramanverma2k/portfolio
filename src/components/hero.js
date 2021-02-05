@@ -20,10 +20,10 @@ const Hero = () => (
     <div style={heroLayout}>
         <div style={heroStyle}>
             <h1>Hello👋,<span>
-                    <p>
+                    <code>
                         I&apos;m Raman Verma, A<br/>
-                        <Typination/>
-                    </p>
+                    </code>
+                    <Typination/>
                     <Social/>
                 </span>
             </h1>
