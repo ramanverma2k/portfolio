@@ -5,14 +5,13 @@ import Social from './social'
 const heroLayout = {
     display: 'flex',
     justifyContent: 'space-between',
-    // border: '1px solid white',
+    alignItems: 'center',
     marginTop: '3rem'
 }
 
 const heroStyle = {
     display: 'flex',
     alignItems: 'center',
-    // border: '1px solid white',
     marginLeft: '10px'
 }
 

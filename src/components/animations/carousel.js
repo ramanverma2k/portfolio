@@ -7,7 +7,7 @@ class Carousel extends React.Component {
         return (
             <CarouselProvider
                 naturalSlideWidth={75}
-                naturalSlideHeight={50}
+                naturalSlideHeight={30}
                 totalSlides={2}
                 infinite={true}
                 interval={2000}
@@ -16,10 +16,10 @@ class Carousel extends React.Component {
                 >
                 <Slider classNameAnimation="easeOut">
                     <Slide index={0}>
-                        <Image src={"https://www.vectorlogo.zone/logos/golang/golang-official.svg"}/>
+                        <Image style={{height: '100px'}} src={"https://www.vectorlogo.zone/logos/golang/golang-official.svg"}/>
                     </Slide>
                     <Slide index={1}>
-                        <Image src={"https://www.vectorlogo.zone/logos/python/python-icon.svg"}/>
+                        <Image style={{height: '100px'}} src={"https://www.vectorlogo.zone/logos/python/python-icon.svg"}/>
                     </Slide>
                 </Slider>
             </CarouselProvider>
