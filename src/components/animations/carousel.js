@@ -12,7 +12,7 @@ class Carousel extends React.Component {
                 infinite={true}
                 interval={2000}
                 isPlaying={true}
-                style={{width: '30%'}}
+                style={{width: '20%'}}
                 >
                 <Slider classNameAnimation="easeOut">
                     <Slide index={0}>
