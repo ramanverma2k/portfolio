@@ -1,8 +1,13 @@
 import './styles/btn.css'
 
+const navStyle = {
+    display: 'flex', 
+    justifyContent: 'flex-end',
+}
+
 const Navbar = () => (
-    <nav>
-        <div style={{display: 'flex', justifyContent: 'flex-end'}}>
+    <nav style={navStyle}>
+        <div>
             <button className="btn">
                 Articles
             </button>
