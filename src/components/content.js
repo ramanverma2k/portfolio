@@ -1,25 +1,24 @@
 const contentStyle = {
     display: 'flex',
-    justifyContent: 'flex-start',
+    justifyContent: 'center',
     alignItems: 'center',
-    margin: '0 20px 0 20px'
+    margin: '0 0 0 20px'
 }
 
 const bStyle = {
     borderBottom: '2px solid',
     borderLength: '20px',
     width: '25%',
-    padding: '10px 0 20px 0'
+    padding: '0 0 15px 0',
+    textAlign: 'center'
 }
 
 const Content = () => (
-    <div>
         <div style={contentStyle}>
             <h1 style={bStyle}>
                 Project Showcase
             </h1>
         </div>
-    </div>
 )
 
 export default Content;
