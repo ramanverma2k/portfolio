@@ -7,12 +7,12 @@ class Carousel extends React.Component {
         return (
             <CarouselProvider
                 naturalSlideWidth={75}
-                naturalSlideHeight={30}
+                naturalSlideHeight={75}
                 totalSlides={2}
                 infinite={true}
                 interval={2000}
                 isPlaying={true}
-                style={{width: '20%'}}
+                style={{width: '20%', height: '20%'}}
                 >
                 <Slider classNameAnimation="easeOut">
                     <Slide index={0}>

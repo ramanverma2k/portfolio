@@ -31,7 +31,7 @@ class Typination extends React.Component {
         return (
                 <div className='div_bgrnd'>
                     <span
-                        style={{ whiteSpace: 'pre' }}
+                        style={{ whiteSpace: 'pre'}}
                         ref={(el) => { this.el = el; }}
                 />
                 </div>

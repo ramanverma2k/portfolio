@@ -11,16 +11,18 @@ const heroLayout = {
 const heroStyle = {
     display: 'flex',
     alignItems: 'center',
-    marginLeft: '10px'
+    marginLeft: '10px',
+    fontFamily: 'Quicksand',
+    fontSize: '25px'
 }
 
 const Hero = () => (
     <div style={heroLayout}>
         <div style={heroStyle}>
-            <h1>Hello👋,<span>
-                    <code>
+            <h1>Hello👋<span>
+                    <p>
                         I&apos;m Raman Verma, A<br/>
-                    </code>
+                    </p>
                     <Typination/>
                 </span>
             </h1>
