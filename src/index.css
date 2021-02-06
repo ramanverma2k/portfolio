@@ -6,7 +6,12 @@
   --catawba: #c92f56;
 }
 
+@font-face {
+  font-family: Quicksand;
+  src: url("./components/fonts/Quicksand.ttf")
+}
+
 html {
   background-color: var(--xiketic);
-  color: var(--linen)
+  color: var(--linen);
 }
