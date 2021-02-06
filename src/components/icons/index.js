@@ -1,7 +1,6 @@
 export { default as CIcon } from './CIcon'
 export { default as DockerIcon } from './DockerIcon'
 export { default as ExpressIcon } from './ExpressIcon'
-export { default as GolangIcon } from './GolangIcon'
 export { default as JavascriptIcon } from './JavascriptIcon'
 export { default as MongodbIcon } from './MongodbIcon'
 export { default as MysqlIcon } from './MysqlIcon'
