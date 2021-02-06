@@ -5,7 +5,7 @@ const heroLayout = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    height: "60vh",
+    height: "70vh",
 };
 
 const heroStyle = {
