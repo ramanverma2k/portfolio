@@ -13,7 +13,7 @@ const heroStyle = {
     alignItems: 'center',
     marginLeft: '10px',
     fontFamily: 'Quicksand',
-    fontSize: '25px'
+    fontSize: '20px'
 }
 
 const Hero = () => (

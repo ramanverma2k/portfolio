@@ -2,6 +2,7 @@ const socialStyle = {
     display: 'flex',
     justifyContent: 'center',
     paddingTop: '1rem',
+    paddingBottom: '2px',
 }
 
 const Social = () => (
