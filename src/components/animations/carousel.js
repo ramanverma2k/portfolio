@@ -1,8 +1,20 @@
-import React from 'react'
-import { CarouselProvider, Slider, Slide, Image } from 'pure-react-carousel'
-import 'pure-react-carousel/dist/react-carousel.es.css'
-import '../icons/index'
-import { CIcon, DockerIcon, ExpressIcon, JavascriptIcon, MongodbIcon, MysqlIcon, NodejsIcon, PostgresqlIcon, PythonIcon, ReactIcon, TypescriptIcon } from '../icons/index'
+import React from "react";
+import { CarouselProvider, Slider, Slide, Image } from "pure-react-carousel";
+import "pure-react-carousel/dist/react-carousel.es.css";
+import "../icons/index";
+import {
+    CIcon,
+    DockerIcon,
+    ExpressIcon,
+    JavascriptIcon,
+    MongodbIcon,
+    MysqlIcon,
+    NodejsIcon,
+    PostgresqlIcon,
+    PythonIcon,
+    ReactIcon,
+    TypescriptIcon,
+} from "../icons/index";
 
 class Carousel extends React.Component {
     render() {
@@ -14,71 +26,75 @@ class Carousel extends React.Component {
                 infinite={true}
                 interval={2000}
                 isPlaying={true}
-                style={{width: '20%',}}
-                >
+                style={{ width: "20%" }}
+            >
                 <Slider classNameAnimation="easeOut">
                     <Slide index={0}>
                         <Image>
-                            <CIcon/>
+                            <CIcon />
                         </Image>
                     </Slide>
                     <Slide index={1}>
-                        <Image src={'https://raw.githubusercontent.com/egonelbre/gophers/10cc13c5e29555ec23f689dc985c157a8d4692ab/vector/fairy-tale/witch-learning.svg'}/>
+                        <Image
+                            src={
+                                "https://raw.githubusercontent.com/egonelbre/gophers/10cc13c5e29555ec23f689dc985c157a8d4692ab/vector/fairy-tale/witch-learning.svg"
+                            }
+                        />
                     </Slide>
                     <Slide index={2}>
                         <Image>
-                            <PythonIcon/>
+                            <PythonIcon />
                         </Image>
                     </Slide>
                     <Slide index={3}>
                         <Image>
-                            <JavascriptIcon/>
+                            <JavascriptIcon />
                         </Image>
                     </Slide>
                     <Slide index={4}>
                         <Image>
-                            <TypescriptIcon/>
+                            <TypescriptIcon />
                         </Image>
                     </Slide>
                     <Slide index={5}>
                         <Image>
-                            <NodejsIcon/>
+                            <NodejsIcon />
                         </Image>
                     </Slide>
                     <Slide index={6}>
                         <Image>
-                            <ReactIcon/>
+                            <ReactIcon />
                         </Image>
                     </Slide>
                     <Slide index={7}>
                         <Image>
-                            <ExpressIcon/>
+                            <ExpressIcon />
                         </Image>
                     </Slide>
                     <Slide index={8}>
                         <Image>
-                            <MongodbIcon/>
+                            <MongodbIcon />
                         </Image>
                     </Slide>
                     <Slide index={9}>
                         <Image>
-                            <PostgresqlIcon/>
+                            <PostgresqlIcon />
                         </Image>
                     </Slide>
                     <Slide index={10}>
                         <Image>
-                            <MysqlIcon/>
+                            <MysqlIcon />
                         </Image>
                     </Slide>
                     <Slide index={11}>
                         <Image>
-                            <DockerIcon/>
+                            <DockerIcon />
                         </Image>
                     </Slide>
                 </Slider>
             </CarouselProvider>
-        )
+        );
     }
 }
 
-export default Carousel
+export default Carousel;

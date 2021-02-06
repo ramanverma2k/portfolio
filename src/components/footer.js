@@ -1,15 +1,15 @@
 import Social from "./social";
 
 const footerStyle = {
-    position: 'absolute',
-    width: '99%',
-    bottom: '0'
-}
+    position: "absolute",
+    width: "99%",
+    bottom: "0",
+};
 
 const Content = () => (
     <footer style={footerStyle}>
-        <Social/>
+        <Social />
     </footer>
-)
+);
 
 export default Content;

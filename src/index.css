@@ -1,17 +1,17 @@
 :root {
-  --xiketic: #0B0014;
-  --linen: #F5E9E2;
-  --paradise_pink: #e7599c;
-  --tumbleweed: #ec9271;
-  --catawba: #c92f56;
+    --xiketic: #0b0014;
+    --linen: #f5e9e2;
+    --paradise_pink: #e7599c;
+    --tumbleweed: #ec9271;
+    --catawba: #c92f56;
 }
 
 @font-face {
-  font-family: Quicksand;
-  src: url("./components/fonts/Quicksand.ttf")
+    font-family: Quicksand;
+    src: url("./components/fonts/Quicksand.ttf");
 }
 
 html {
-  background-color: var(--xiketic);
-  color: var(--linen);
+    background-color: var(--xiketic);
+    color: var(--linen);
 }

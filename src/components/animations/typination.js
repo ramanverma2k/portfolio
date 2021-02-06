@@ -1,13 +1,13 @@
-import React from 'react'
-import Typed from 'typed.js'
-import '../styles/div_bgrnd.css'
+import React from "react";
+import Typed from "typed.js";
+import "../styles/div_bgrnd.css";
 
 const typination = [
-    'Freelancer',
-    'Developer',
-    'Quick learner',
-    'lazy person who loves automation'
-]
+    "Freelancer",
+    "Developer",
+    "Quick learner",
+    "lazy person who loves automation",
+];
 
 class Typination extends React.Component {
     componentDidMount() {
@@ -18,25 +18,27 @@ class Typination extends React.Component {
             backDelay: 700,
             smartBackspace: true,
             loop: true,
-            cursorChar: '|'
-        }
-        this.typed = new Typed(this.el, options)
+            cursorChar: "|",
+        };
+        this.typed = new Typed(this.el, options);
     }
 
     componentWillUnmount() {
-        this.typed.destroy()
+        this.typed.destroy();
     }
 
     render() {
         return (
-                <div className='div_bgrnd'>
-                    <span
-                        style={{ whiteSpace: 'pre'}}
-                        ref={(el) => { this.el = el; }}
+            <div className="div_bgrnd">
+                <span
+                    style={{ whiteSpace: "pre" }}
+                    ref={(el) => {
+                        this.el = el;
+                    }}
                 />
-                </div>
-        )
+            </div>
+        );
     }
 }
 
-export default Typination
+export default Typination;

@@ -1,34 +1,36 @@
-import Typination from './animations/typination'
-import Carousel from './animations/carousel'
+import Typination from "./animations/typination";
+import Carousel from "./animations/carousel";
 
 const heroLayout = {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    height: '60vh'
-}
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    height: "60vh",
+};
 
 const heroStyle = {
-    display: 'flex',
-    alignItems: 'center',
-    marginLeft: '10px',
-    fontFamily: 'Quicksand',
-    fontSize: '20px'
-}
+    display: "flex",
+    alignItems: "center",
+    marginLeft: "10px",
+    fontFamily: "Quicksand",
+    fontSize: "20px",
+};
 
 const Hero = () => (
     <div style={heroLayout}>
         <div style={heroStyle}>
-            <h1>Hello👋<span>
+            <h1>
+                Hello👋
+                <span>
                     <p>
-                        I&apos;m Raman Verma, A<br/>
+                        I&apos;m Raman Verma, A<br />
                     </p>
-                    <Typination/>
+                    <Typination />
                 </span>
             </h1>
         </div>
-        <Carousel/>
+        <Carousel />
     </div>
-)
+);
 
 export default Hero;
