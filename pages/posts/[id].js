@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { getPostsData, getAllPostsIds } from "../../lib/posts";
+import styles from "../../styles/Blog.module.css";
 
 export async function getStaticPaths() {
     const paths = getAllPostsIds();
@@ -20,14 +21,16 @@ export async function getStaticProps({ params }) {
 
 function Post({ postData }) {
     return (
-        <div>
+        <div className={styles.post__container}>
             <Head>
                 <title>{postData.title}</title>
             </Head>
-            <h1>{postData.title}</h1>
-            <br />
-            {postData.date}
-            <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+            <h1 className={styles.post__heading}>{postData.title}</h1>
+            <text className={styles.post__date}>{postData.date}</text>
+            <div
+                className={styles.post__content}
+                dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+            />
         </div>
     );
 }

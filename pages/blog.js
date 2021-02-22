@@ -1,18 +1,24 @@
 import Navbar from "../components/nav";
 import Link from "next/link";
 import { getSortedPostsData } from "../lib/posts";
+import styles from "../styles/Blog.module.css";
 
 function Blog({ allPostsData }) {
     return (
         <div>
             <Navbar />
-            <section className="blog__container">
-                <h1>Blog</h1>
-                <ul className="posts">
-                    {allPostsData.map(({ id, date, title }) => (
-                        <li className="posts__items" key={id}>
+            <section className={styles.blog__container}>
+                <h1 className={styles.heading}>Blog</h1>
+                <ul className={styles.posts}>
+                    {allPostsData.map(({ id, title, description }) => (
+                        <li className={styles.posts__list} key={id}>
                             <Link href={`/posts/${id}`}>
-                                <a>{title}</a>
+                                <a className={styles.posts__items}>
+                                    {title}
+                                    <p className={styles.post__description}>
+                                        {description}
+                                    </p>
+                                </a>
                             </Link>
                         </li>
                     ))}
