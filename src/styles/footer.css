@@ -1,0 +1,26 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3rem;
+    color: var(--primary-text-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+@media (max-width: 1080px) {
+    .footer {
+        height: 5rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        height: 5rem;
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,37 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--secondary-bg-color);
+    opacity: 50%;
+    height: 3rem;
+    font-size: 1.2rem;
+}
+
+.logo {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    border: 1px solid var(--secondary-text-color);
+    padding: 3px;
+    border-radius: 2px;
+}
+
+.link1 {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    margin-right: 2rem;
+}
+
+@media (max-width: 1080px) {
+    .navbar {
+        height: 5rem;
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: 5rem;
+        font-size: 1.7rem;
+    }
+}
