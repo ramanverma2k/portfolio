@@ -1,7 +1,44 @@
+import React, { useState, useEffect } from "react";
 import Social from "./social";
 import "../styles/hero.css";
 
 const Hero = () => {
+    const mediumURL =
+        "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@ramanverma4183";
+
+    /*
+        TODO: Implement error catching and handling on state.
+    */
+
+    const [blog, setBlog] = useState({
+        items: [],
+        isLoading: true,
+    });
+
+    const axios = require("axios").default;
+
+    useEffect(() => {
+        axios.get(mediumURL).then((info: any) => {
+            const blogs = info.data.items;
+            const posts = blogs.filter(
+                (posts: any) => posts.categories.length > 0
+            );
+            setBlog({ items: posts, isLoading: false });
+        });
+    }, [axios]);
+
+    const loadBlog = () => {
+        if (blog.items) {
+            return blog.items.map((post: any) => (
+                <div className="blog--card">
+                    <a href={post.link} className="blog--card__heading">
+                        {post.title}
+                    </a>
+                </div>
+            ));
+        }
+    };
+
     return (
         <div className="hero">
             <div className="preview__box">
@@ -29,6 +66,7 @@ const Hero = () => {
             <div className="preview__box">
                 <h2 className="preview__heading">
                     Blog <hr />
+                    {blog.isLoading ? "Loading..." : loadBlog()}
                 </h2>
             </div>
         </div>
