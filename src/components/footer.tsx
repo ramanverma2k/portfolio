@@ -8,7 +8,8 @@ const Footer = () => {
             </span>
             <span>
                 Made with <span style={{ color: "#ee6c4d" }}>React</span>,{" "}
-                <span style={{ color: "#ee6c4d" }}>Typescript</span> and ❤
+                <span style={{ color: "#ee6c4d" }}>Typescript</span> and{" "}
+                <span style={{ color: "#ee6c4d" }}>❤</span>
             </span>
         </footer>
     );
