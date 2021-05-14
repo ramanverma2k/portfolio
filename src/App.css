@@ -1,3 +1,13 @@
-.App {
+.Home {
     text-align: center;
+}
+
+.About {
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+.Resume {
+    text-align: center;
+    color: var(--primary-text-color);
 }
