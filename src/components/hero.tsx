@@ -41,11 +41,41 @@ const Hero = () => {
         }
     };
 
+    const [projects, setProjects] = useState({
+        items: [{}],
+        isLoading: true,
+    });
+
+    useEffect(() => {
+        const Links = [
+            {
+                link: "https://www.github.com/ramanverma2k/qed_historical_data",
+                title: "qed_historical_data",
+            },
+            {
+                link: "https://www.github.com/ramanverma2k/nse",
+                title: "nse",
+            },
+        ];
+        setProjects({ items: Links, isLoading: false });
+    }, []);
+
+    const loadProjects = () => {
+        return projects.items.map((post: any) => (
+            <div className="project--card">
+                <a href={post.link} className="project--card__heading">
+                    {post.title}
+                </a>
+            </div>
+        ));
+    };
+
     return (
         <div className="hero">
             <div className="preview__box">
                 <h2 className="preview__heading">
                     Projects <hr />
+                    {projects.isLoading ? "Loading..." : loadProjects()}
                 </h2>
             </div>
             <h1 className="greet">
