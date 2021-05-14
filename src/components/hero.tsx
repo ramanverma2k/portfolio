@@ -6,25 +6,27 @@ const Hero = () => {
     const mediumURL =
         "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@ramanverma4183";
 
-    /*
-        TODO: Implement error catching and handling on state.
-    */
-
     const [blog, setBlog] = useState({
         items: [],
         isLoading: true,
+        error: null,
     });
 
     const axios = require("axios").default;
 
     useEffect(() => {
-        axios.get(mediumURL).then((info: any) => {
-            const blogs = info.data.items;
-            const posts = blogs.filter(
-                (posts: any) => posts.categories.length > 0
+        axios
+            .get(mediumURL)
+            .then((info: any) => {
+                const blogs = info.data.items;
+                const posts = blogs.filter(
+                    (posts: any) => posts.categories.length > 0
+                );
+                setBlog({ items: posts, isLoading: false, error: null });
+            })
+            .catch((err: any) =>
+                setBlog({ items: [], isLoading: false, error: err })
             );
-            setBlog({ items: posts, isLoading: false });
-        });
     }, [axios]);
 
     const loadBlog = () => {
