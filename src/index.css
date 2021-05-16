@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("styles/fonts/Montserrat-Regular.ttf");
 
 :root {
     --main-bg-color: #262f36;
-    --secondary-bg-color: #000100;
+    --secondary-bg-color: rgba(0, 1, 0, 0.5);
     --primary-text-color: #ffffff;
     --secondary-text-color: #ee6c4d;
 }
