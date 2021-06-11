@@ -1,10 +1,15 @@
-@import url("styles/fonts/Montserrat-Regular.ttf");
-
 :root {
     --main-bg-color: #262f36;
     --secondary-bg-color: rgba(0, 1, 0, 0.5);
     --primary-text-color: #ffffff;
     --secondary-text-color: #ee6c4d;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("styles/fonts/Montserrat-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {

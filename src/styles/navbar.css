@@ -3,7 +3,6 @@
     justify-content: space-around;
     align-items: center;
     background-color: var(--secondary-bg-color);
-    opacity: 50%;
     height: 3rem;
     font-size: 1.2rem;
 }

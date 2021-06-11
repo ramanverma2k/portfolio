@@ -21,7 +21,6 @@
     max-height: 400px;
     width: 250px;
     background-color: var(--secondary-bg-color);
-    opacity: 50%;
     border-radius: 5px;
     overflow: hidden;
 }
