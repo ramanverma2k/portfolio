@@ -8,37 +8,103 @@
 }
 
 .h1__underline {
-    position: fixed;
-    width: 20rem;
+    position: relative;
+    width: 100%;
     margin-top: 1.5rem;
 }
 
 .highlight {
-    margin-top: 4rem;
     font-size: 1.5rem;
 }
 
-.summary {
-    margin-top: 2rem;
-}
-
-.projects {
-    margin-top: 2rem;
-}
-
-.currently {
-    margin-top: 2rem;
-}
-
-.interests {
-    margin-top: 2rem;
-}
-
-.delta {
+p {
     margin-top: 2rem;
 }
 
 .goodbye {
     text-align: right;
-    margin-top: 4rem;
+}
+
+@media (max-width: 1080px) {
+    .h1 {
+        font-size: 2rem;
+    }
+
+    .h1__underline {
+        position: relative;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .highlight {
+        font-size: 1rem;
+    }
+
+    .section__about {
+        width: 75%;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .h1 {
+        font-size: 2rem;
+    }
+
+    .h1__underline {
+        position: relative;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .highlight {
+        font-size: 1rem;
+    }
+
+    .section__about {
+        width: 75%;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .h1 {
+        font-size: 2rem;
+    }
+
+    .h1__underline {
+        position: relative;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .highlight {
+        font-size: 1rem;
+    }
+
+    .section__about {
+        width: 75%;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .h1 {
+        font-size: 2rem;
+    }
+
+    .h1__underline {
+        position: relative;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .highlight {
+        font-size: 1rem;
+    }
+
+    .section__about {
+        width: 75%;
+        font-size: 0.8rem;
+    }
 }

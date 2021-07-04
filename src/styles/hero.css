@@ -88,3 +88,39 @@ hr {
         display: none;
     }
 }
+
+@media (max-width: 425px) {
+    .hero {
+        justify-content: center;
+        line-height: 2rem;
+    }
+
+    .greet {
+        font-size: 2rem;
+    }
+    .info {
+        font-size: 1.2rem;
+    }
+
+    .preview__box {
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+    .hero {
+        justify-content: center;
+        line-height: 2rem;
+    }
+
+    .greet {
+        font-size: 1rem;
+    }
+    .info {
+        font-size: 0.8rem;
+    }
+
+    .preview__box {
+        display: none;
+    }
+}

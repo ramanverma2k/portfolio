@@ -1,5 +1,6 @@
 import "../App.css";
 import "../styles/about.css";
+import "../styles/footer.css";
 
 const About = () => {
     return (
