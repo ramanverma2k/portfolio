@@ -9,6 +9,7 @@ const Hero = () => {
     const [blog, setBlog] = useState({
         items: [],
         isLoading: true,
+        isNull: true,
         error: null,
     });
 
@@ -22,10 +23,28 @@ const Hero = () => {
                 const posts = blogs.filter(
                     (posts: any) => posts.categories.length > 0
                 );
-                setBlog({ items: posts, isLoading: false, error: null });
+                setBlog({
+                    items: posts,
+                    isLoading: false,
+                    isNull: false,
+                    error: null,
+                });
+                if (posts.length <= 0) {
+                    setBlog({
+                        items: posts,
+                        isLoading: false,
+                        isNull: true,
+                        error: null,
+                    });
+                }
             })
             .catch((err: any) =>
-                setBlog({ items: [], isLoading: false, error: err })
+                setBlog({
+                    items: [],
+                    isLoading: true,
+                    isNull: true,
+                    error: err,
+                })
             );
     }, [axios]);
 
@@ -48,6 +67,18 @@ const Hero = () => {
 
     useEffect(() => {
         const Links = [
+            {
+                link: "https://www.github.com/derpLLC/Petscue",
+                title: "Petscue",
+            },
+            {
+                link: "https://www.github.com/ramanverma2k/RecipeTime",
+                title: "Recipe Time",
+            },
+            {
+                link: "https://www.github.com/ramanverma2k/goKrypt",
+                title: "goKrypt",
+            },
             {
                 link: "https://www.github.com/ramanverma2k/qed_historical_data",
                 title: "qed_historical_data",
@@ -85,11 +116,12 @@ const Hero = () => {
                         A <span style={{ color: "#ee6c4d" }}>GoLang</span>{" "}
                         fanatic,{" "}
                         <span style={{ color: "#ee6c4d" }}>Typescript</span>{" "}
-                        lover,{" "}
-                        <span style={{ color: "#ee6c4d" }}>Fullstack</span>{" "}
-                        developer,
+                        lover and{" "}
+                        <span style={{ color: "#ee6c4d" }}>Flutter</span>{" "}
+                        developer
                         <br />
                         With a little bit of interest in{" "}
+                        <span style={{ color: "#ee6c4d" }}>AI</span> and{" "}
                         <span style={{ color: "#ee6c4d" }}>Deep Learning</span>.
                     </p>
                 </span>
@@ -98,7 +130,9 @@ const Hero = () => {
             <div className="preview__box">
                 <h2 className="preview__heading">
                     Blog <hr />
-                    {blog.isLoading ? "Loading..." : loadBlog()}
+                    {blog.isLoading || blog.isNull
+                        ? "beep bop could not find any blogs"
+                        : loadBlog()}
                 </h2>
             </div>
         </div>

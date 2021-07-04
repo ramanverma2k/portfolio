@@ -3,11 +3,12 @@
 }
 
 .About {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     color: var(--primary-text-color);
-}
-
-.Resume {
-    text-align: center;
+    line-height: 2rem;
+    height: 85vh;
+    max-height: 100%;
     color: var(--primary-text-color);
 }
