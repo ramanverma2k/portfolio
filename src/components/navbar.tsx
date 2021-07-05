@@ -8,9 +8,14 @@ const Navbar = () => {
                 RV
             </Link>
             <div className="navbar__right">
-                <Link to="/resume" className="link link1">
+                <a
+                    href="https://drive.google.com/file/d/1I-ZAtjAdJ-sKESbu-HQAx0r9ROIBHxBC/view?usp=sharing"
+                    className="link1"
+                    rel="noreferrer"
+                    target="_blank"
+                >
                     Resume
-                </Link>
+                </a>
                 <Link to="/about" className="link">
                     About
                 </Link>
