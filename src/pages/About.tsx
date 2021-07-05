@@ -84,9 +84,8 @@ const About = () => {
                     I hope you enjoyed your stay and browsing here. Thank you
                     for visiting. You can check out my resume by clicking the
                     button on navbar or use any of the social platforms
-                    mentioned on the homescreen to contact me.
-                    <br />
-                    <p className="goodbye">Have a nice day! :)</p>
+                    mentioned on the homescreen to contact me. Have a nice day!
+                    :)
                 </p>
             </section>
         </div>
